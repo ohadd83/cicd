@@ -7,12 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/yourusername/my-app.git'
-            }
-        }
-
         stage('Install dependencies') {
             steps {
                 sh 'npm install'
