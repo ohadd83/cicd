@@ -30,7 +30,7 @@ pipeline {
                 sh '''
                     docker stop myapp || true
                     docker rm myapp || true
-                    docker run -d -p 8080:3000 --name myapp $IMAGE_NAME:$IMAGE_TAG
+                    docker run -d -p 8083:3000 --name myapp $IMAGE_NAME:$IMAGE_TAG
                 '''
             }
         }
